@@ -77,10 +77,15 @@ WSGI_APPLICATION = 'API.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'Djangovercel',  # Nome do seu banco de dados
+        'USER': 'postgres',    # Usuário do banco de dados
+        'PASSWORD': 'jv240300',  # Senha do usuário
+        'HOST': 'localhost',      # Endereço do servidor PostgreSQL
+        'PORT': '5432',           # Porta do PostgreSQL (padrão é 5432)
     }
 }
+
 
 
 # Password validation
